@@ -1,0 +1,14 @@
+execve("./test_malloc", ["./test_malloc"], [/* 61 vars */]) = 0
+uname({sys="Linux", node="ubuntu", ...}) = 0
+brk(0)                                  = 0x4fa9000
+brk(0x4faa1c0)                          = 0x4faa1c0
+arch_prctl(ARCH_SET_FS, 0x4fa9880)      = 0
+readlink("/proc/self/exe", "/home/lhc/aos_lab3_submission/te"..., 4096) = 41
+brk(0x4fcb1c0)                          = 0x4fcb1c0
+brk(0x4fcc000)                          = 0x4fcc000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 2), ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f2d5b185000
+write(1, "Malloc() test- 1MB\n", 19)    = 19
+exit_group(0)                           = ?
++++ exited with 0 +++

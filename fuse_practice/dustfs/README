@@ -1,0 +1,19 @@
+1) Install
+
+$ cmake .
+$ make -j
+
+2) Run
+
+$ ./dustfs [FUSE OPTION] [SOURCE DIR] [TARGET DIR] [ACCOUNT@SERVER HOST NAME]
+
+3) Experiment
+
+*.sh file specifies start and end target size.
+For each loop, these scripts execute experiments, and increase the target size by power of 2.
+(i.e. 4KB -> 8KB -> 16KB ..)
+ 
+ - run_read_exp.sh: read operation test
+ - run_write_exp.sh: write operation test
+ - run_writeread_comb_exp.sh: read and write test
+ 
